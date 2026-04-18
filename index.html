@@ -1094,6 +1094,7 @@ function placeOrder(){
   if(notes) msg+=`\n\nملاحظات: ${notes}`;
   document.getElementById('successWaBtn').onclick=()=>{window.open(WA+'?text='+encodeURIComponent(msg),'_blank');};
   document.getElementById('successOverlay').classList.add('open');
+  window.open(WA+'?text='+encodeURIComponent(msg),'_blank');
   cart=[]; renderCart();
 }
 function closeSuccess(){
